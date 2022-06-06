@@ -1,0 +1,420 @@
+/* CSS STYLING SHEET FOR INDEX.HTML */
+html {
+    font-family: fantasy Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    font-family: fantasy;
+    color: darkslategrey;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: block;    
+}
+
+.NAViCON {
+    position: fixed;
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 100;
+    size: auto;
+}
+
+.sig {
+    align-self: flex-start;
+    text-align: left;
+}
+
+.menu {
+    align-self: right;
+    text-align: right;
+    float: left;
+    top: auto;
+    left: 0px;
+    justify-content: space-evenly;
+
+}
+
+.NAVi  a li {
+    color: rgb(98, 110, 127);
+    font-size: 20px;
+    background-color: rgb(51, 82, 86);
+    display: inline-block;
+    margin: 0% auto;
+    padding: 10px;
+    border: 1px solid rgb(177, 176, 176);
+    box-shadow: 2px 2px 10px 0 darkslategray;
+    border-radius: 6px;
+    cursor: pointer;
+    transition-property: background;
+    transition-duration: .4s;
+    transition-delay: 0s;
+    transition-timing-function: ease-in-out;
+}
+
+.NAVi a li:hover {
+    color: rgb(227, 240, 246);
+    box-shadow: 4px 4px 20px 0 rgb(106, 151, 171);
+}
+
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: auto;
+    position: fixed;
+    flex-wrap: nowrap;
+    z-index: -100;
+    top: 0;
+    left: 0;
+    opacity: .6;
+  }
+
+.Overlay {
+    object-fit: cover;
+    width: 100vw;
+    height: auto;
+    position: relative;
+    flex-wrap: nowrap;
+    z-index: 0;
+    text-align: right;;
+    font-size: 35px;
+    transition: transform 5s ease-in-out;
+}
+
+.Overlay:hover {
+    filter: brightness(200%);
+    transition: transform 5s ease-in-out;
+    transform: scale(1.2);
+}
+
+.OverH {
+    margin-right: 10%;
+}
+
+.quote {
+    font-size: 25px;
+    margin-right: 15%;
+    transition: scale 5s;
+}
+
+.blackdrop {
+    margin-top: 400px;
+    display: inline-block;
+    vertical-align: top;
+    flex-wrap: nowrap;
+    z-index: -1;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---ROW 1-----------------------------------*/
+.Row1 {
+    z-index: 1;
+    position: static;
+    display: flex;
+    flex-wrap: nowrap;
+    float: left;
+    height: 700px;
+    margin: 0, 0;
+}
+
+    .Box1 {
+        position: relative;
+        display: inline-block;
+        width: 50vw;
+        height: 700px;
+        justify-content: center;
+        background-color: rgb(98, 110, 127);
+}
+
+    .topImage {
+        z-index: 3;
+        display: block;
+        height: 600px;
+        width: auto;
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+        overflow: hidden;
+    }
+
+    .topImage img {
+        z-index: 3;
+        animation: MapPan 4s linear 25ms infinite forwards none;
+    }
+
+    @keyframes MapPan {
+        0% {
+            transform: translate3d(0px, 0px, 0px);
+        }
+        
+        25% {
+            transform:translate3d(-300px, 0px, 0px); 
+        }
+    
+        50% {
+            transform: translate3d(-300px, 300px, 0px);
+        }
+    
+        75% {
+            transform: translate3d(0px, 300px, 0px);
+        }
+
+        99% {
+            transform: translate3d(0px, 0px, 0px);
+        }
+    }
+
+    .Box2 {
+        box-sizing: border-box;
+        position: relative;
+        display: block;
+        width: 50vw;
+        align-content: center;
+        text-align: center;
+        color: rgb(98, 110, 127);
+        height: 700px;
+        background-color: rgb(51, 82, 86);
+        font-size: small;          
+    }
+
+        .bullets {
+            filter: brightness(175%);
+        }
+
+        .B2Header h1 {
+            filter: brightness(225%);
+            transition: transform 3s;
+        }
+
+        .B2Header h1:hover {
+            transform: scale(1.1);
+            transition: transform 1s;
+        }
+
+        .bullets h3 {
+            filter: brightness(125%);
+            text-decoration: underline;
+            transition: transform 3s;
+        }
+
+        .bullets h3:hover {
+            transform: scale(1.1);
+            transition: transform 1s;
+        }
+
+        .bullets p {
+            transition: transform 3s; 
+        }
+
+        .bullets p:hover {
+            transform: scale(1.3);
+            transition: transform 5s;
+        }
+
+
+/*---ROW 2-----------------------------------*/
+/*---DONE DONT FUCK WITH IT!---*/
+.Row2 {
+    z-index: 1;
+    position: static;
+    display: inline-block;
+    vertical-align: top;
+    background-color: black;
+    width: 100vw;
+    height: 650px;
+    margin-left: 0;
+    margin-top: 0;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-size: larger;
+    color: aqua;
+}
+
+    .SK {
+        display: flex;
+        position: relative;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        height: 500px;
+    }
+
+    .SKoff {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 150px;
+        height: 500px;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .SKon {
+        display: flex;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 150px;
+        position: absolute;
+        z-index: 3;
+        opacity: 0;
+        transition: opacity 5s;
+    }
+    
+    .GIT {
+        z-index: 4;
+        display: block;
+        position: relative;
+        text-align: center;
+        vertical-align: bottom;
+        opacity: 0;
+        transition: opacity 5s;
+    }
+
+    h1 a {
+        color: aqua;
+    }
+
+    .SK:hover > .SKon {
+        transition: opacity 2s;
+        opacity: 1;
+    }
+
+    .SK:hover > .GIT {
+        transition: opacity 2s;
+        opacity: 1;
+    }
+
+    /*---ROW 3-----------------------------------
+    ---------DONE! DONT FUCK WITH IT!---------*/
+.Row3 {
+    z-index: 1;
+    position: static;
+    display: block;
+    height: 510px;
+    float: left;
+}
+
+    .Box3 {
+        box-sizing: border-box;
+        position: relative;
+        float: left;
+        width: 50vw;
+        align-content: center;
+        background-color: rgb(51, 82, 86);
+    }
+
+    .Box3 h1 {
+        text-align: center;
+        color: rgb(98, 110, 127);
+    }
+        input[type=text] {
+            width: 100%; 
+            padding: 25px; 
+            border: 3px solid rgb(177, 176, 176); 
+            border-radius: 4px; 
+            box-sizing: border-box; 
+            margin-top: 6px; 
+            margin-bottom: 16px; 
+            font-family: fantasy Bold;
+        }
+        
+        
+        input[type=text]:hover {
+            box-shadow: 0 0 5px rgb(51, 82, 86) inset; 
+        }
+        
+        input[type=submit] {
+            background-color: black; 
+            color: rgb(98, 110, 127); 
+            border-radius: 4px; 
+            display: block; 
+            margin-left: auto; 
+            margin-right: auto;
+            font-family: fantasy Bold;
+        }
+        
+        
+        input[type=submit]:hover {
+            background-color: darkslategray; 
+            color: aliceblue; 
+            transform: scale(1.5);
+            transition: transform 1.5s; 
+        }
+        
+        form {
+            margin: 10px;
+            border-radius: 5px;
+            background-color: rgb(177, 176, 176); 
+            padding: 20px;
+            border-radius: 10px;
+            font-family: fantasy
+        }
+
+    
+    .Box4 {
+        position: relative;
+        display: inline-block;
+        width: 50vw;
+        height: 520px;
+        justify-content: center;
+        background-color: rgb(98, 110, 127);
+    }
+
+
+    .Coff {
+        position: relative;
+        display: flex;
+        height: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 2;
+        transform: rotate(0);
+        transition: transform 1sec;
+    }
+
+    .Coff img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Coff:hover {
+        transform: rotate(360deg);
+        transition: transform 3s;
+    }
+
+    footer {
+        z-index: 1;
+        position: static;
+        display: block;
+        color: rgb(51, 82, 86);
+        background-color: rgb(60, 60, 60);
+        border: 5px;
+        border-radius: 3px;
+        border-color: rgb(51, 82, 86);
+        margin: 0;
+        padding: 5px;
+        text-align: center;
+        font-size: larger;
+    }
+
+    footer h3:hover {
+        filter: brightness(175%);
+    }
+
+    footer h5:hover {
+        filter: brightness(175%);
+    }
+
+
+
