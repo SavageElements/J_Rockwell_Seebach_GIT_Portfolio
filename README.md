@@ -7,12 +7,11 @@ These are a few of the projects i have accomplished in front end development.
 
 HTML
 
-HTML bootstrap assignment -
-  A little page made in bootstrap. 
+HTML bootstrap - A little page for a mock-game made in bootstrap. Worth checking out for some creepy visuals.
   
 HTML One page -
-  A single page  with HTML/CSS. 
+  A single page site for a nautical board game.
 
 full HTML/CSS site
-  The publicHTML folder for a website.
+  The publicHTML folder for an earlier version of my website.
 
