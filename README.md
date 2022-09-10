@@ -2,7 +2,7 @@
 
 Thanks for stopping by!
 
-These are a few of the projects i have accomplished at my time at the Tech Academy.
+These are a few of the projects i have accomplished in front end development.
 
 
 HTML
